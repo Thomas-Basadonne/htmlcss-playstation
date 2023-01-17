@@ -1,0 +1,97 @@
+/* header */
+.logo-header>img{
+    height: 30px;
+    width: 50px;
+}
+
+
+/* jumbotron */
+
+.bg-img{
+    background-image: url(../img/jumbo-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    height: 80vh;
+}
+
+.button-og{
+    padding: 10px 10px;
+    background-color: #CD3D0F;
+    color: aliceblue;
+    border-color: #CD3D0F;
+    border-radius: 25px;
+}
+
+.button-bl{
+    padding: 10px 10px;
+    background-color: #2D64E6;
+    color: aliceblue;
+    border-color: #2D64E6;
+    border-radius: 25px;
+}
+
+.button-grey{
+    padding: 10px 10px;
+    background-color: #D9DADC;
+    color: #2D64E6;
+    border: none;
+    border-radius: 25px;
+}
+
+.button-white{
+    padding: 10px 10px;
+    border-radius: 25px;
+}
+
+.ps5-carosel>.row>.col>img{
+    max-height: 150px;
+    max-width: 150px;
+}
+
+.ps-store{
+    background-color: #202020;
+    color: aliceblue;
+}
+
+.jumbo-ps-store{
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    background-size: cover;
+}
+
+.ps-plus{
+    background-color: #BEBCBB;
+    min-height: 50vh;
+}
+
+.ps-plus-img{
+    max-height: 120px;
+}
+
+/* PERCHE NON SI STRETCHA */
+.col .ps-plus-img-big{
+    object-fit: cover;
+}
+
+.ps-now{
+    background-color: #161C3B;
+    color: aliceblue;
+}
+
+.ps-now-img{
+    max-height: 110px;
+}
+
+.ps-now-img-big{
+    height: 100%;
+}
+
+.blu-footer{
+    background-color: #00439C;
+    color: aliceblue;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}

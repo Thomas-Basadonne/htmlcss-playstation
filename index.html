@@ -24,159 +24,362 @@
 
 <body>
 	<header>
-		<div class="logo-header">
+		<div class="logo-header container-fluid bg-black text-end">
 			<img src="./img/sony_logo.svg" alt="soni logo">
 		</div>
 
-		<nav>
-
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-expand-lg bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Navbar</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
+								Dropdown
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled">Disabled</a>
+						</li>
+					</ul>
+					<form class="d-flex" role="search">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Search</button>
+					</form>
+				</div>
+			</div>
 		</nav>
 	</header>
 
+<!-- JUMBOTRON -->
 	<div class="jumbotron">
-		<div class="bg-img">
-			<img src="./img/returnal-hero-banner-logo.png" alt="returnal banner">
-			<h1>Rompi il cerchio</h1>
-			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, obcaecati hic asperiores ipsa fugiat error unde
-				veritatis enim mollitia voluptatum excepturi ducimus temporibus inventore, magnam quo suscipit corporis libero quas.
-			</p>
-			<button>Acquista ora</button>
+		<div class="bg-img container-fluid d-flex align-items-end">
+			<div class="row pb-5">
+				<div class="col-lg-4">
+					<img src="./img/returnal-hero-banner-logo.png" alt="returnal banner" class="mb-4">
+					<h1 class="mb-4">Rompi il cerchio</h1>
+					<p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, obcaecati hic asperiores ipsa fugiat error unde
+						veritatis enim mollitia voluptatum excepturi ducimus temporibus inventore, magnam quo suscipit corporis libero quas.
+					</p>
+					<button class="button-og">Acquista ora</button>
+				</div>
+			</div>
 		</div>
 
-		<div class="carosel">
-			<img src="./img/returnal-listing-thumb-01-ps5.jpg" alt="returnal">
-			<img src="./img/ratchet-and-clank-rift-apart-keyart.jpg" alt="ratchet e clank">
+		<div class="carosel container-fluid">
+			<div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-5 my-4">
+				<div class="col"><img class="rounded" src="./img/returnal-listing-thumb-01-ps5.jpg" alt="returnal"></div>
+				<div class="col"><img class="rounded" src="./img/ratchet-and-clank-rift-apart-keyart.jpg" alt="ratchet e clank"></div>
+				<div class="col"><img class="rounded" src="./img/returnal-listing-thumb-01-ps5.jpg" alt="returnal"></div>
+				<div class="col"><img class="rounded" src="./img/ratchet-and-clank-rift-apart-keyart.jpg" alt="ratchet e clank"></div>
+				<div class="col"><img class="rounded" src="./img/returnal-listing-thumb-01-ps5.jpg" alt="returnal"></div>
+				<div class="col"><img class="rounded" src="./img/ratchet-and-clank-rift-apart-keyart.jpg" alt="ratchet e clank"></div>
+			</div>
+			
+			
 		</div>	
 	</div>
 
-	<div class="ps5">
-		<!-- 3 row sicuramente -->
-		<div class="ps5-head"> 
-			<h3>PLAY HAS NO LIMITS</h3>
-			<h2>Ecco la Playstation 5</h2>
-			<h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+	<!-- PS5 -->
+	<div class="ps5 mt-5">
+
+		<!-- ps5 head -->
+		<div class="ps5-head text-center my-5"> 
+			<h3 class="text-primary fs-4 mb-0">PLAY HAS NO LIMITS</h3>
+			<h2 class="fs-1 mb-4">Ecco la Playstation 5</h2>
+			<h4 class="text-muted mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
 		</div>
 		
-		<div class="ps5-main">
-			<!-- row con 2 col 50-50 -->
-			<div>
-				<h3>Console Playstation 5</h3>
-				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, ipsam.</p>
-				<button>Maggiori informazioni</button>	
-			</div>
-			<div>
-				<img src="./img/playstation-5-thumb.png" alt="ps5">
+		<!-- ps5 main -->
+		<div class="ps5-main container">
+			<div class="row row-cols-1 row-cols-md-2 ">
+				<div class="col d-flex align-items-center">
+					<div>
+						<h3 class="fs-1 my-3">Console Playstation 5</h3>
+						<p class="my-3 text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, ipsam.</p>
+						<button class="button-bl my-3">Maggiori informazioni</button>
+					</div>
+				</div>
+
+				<div class="col">
+					<img src="./img/playstation-5-thumb.png" alt="ps5">
+				</div>
 			</div>
 		</div>
-		<div class="ps5-carosel">
-			<img src="./img/playstation-5-thumb.png" alt="ps5">
-			<img src="./img/joypad-thumb.png" alt="joypad">
-			<img src="./img/remote-thumb.png" alt="remote">
-			<img src="./img/camera-thumb.jpg" alt="camera">
-			<img src="./img/headset-thumb.png" alt="headset">
+
+		<!-- carosello ps5 -->
+
+		<div class="ps5-carosel container text-center">
+			<div class="row row-cols-3 row-cols-md-5">
+				<div class="col">
+					<img src="./img/playstation-5-thumb.png" alt="ps5">
+					<p class="my-3">controller ps5</p>
+				</div>
+
+				<div class="col">
+					<img src="./img/joypad-thumb.png" alt="joypad">
+					<p class="my-3 text-muted">telecomando ps5</p>
+				</div>
+
+				<div class="col">
+					<img src="./img/remote-thumb.png" alt="remote">
+					<p class="my-3 text-muted">telecomando ps5</p>
+				</div>
+
+				<div class="col">
+					<img src="./img/camera-thumb.jpg" alt="camera">
+					<p class="my-3 text-muted">telecomando ps5</p>
+				</div>
+
+				<div class="col">
+					<img src="./img/headset-thumb.png" alt="headset">
+					<p class="my-3 text-muted">telecomando ps5</p>
+				</div>
+			</div>
 		</div>
 	</div>
 
+	<!-- PS STORE -->
 	<div class="ps-store">
-		<div class="jumbo-ps-store">
-			<img src="./img/it-takes-two-logo.png" alt="it-takes-two-logo">
-			<h2>Un'avventura cooperativa selvaggia ti attende</h2>
-			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cupiditate vel dolores distinctio officia accusamus adipisci, quidem, corrupti totam aliquam, delectus qui animi beatae repudiandae consequuntur expedita assumenda eos ipsum?</p>
-			<button>Acquista ora</button>
+		<div class="jumbo-ps-store container-fluid d-flex align-items-end pt-5">
+			<div class="row pb-5">
+				<div class="col-lg-4">
+					<img src="./img/it-takes-two-logo.png" alt="it-takes-two-logo">
+					<h2 class="fs-1">Un'avventura cooperativa selvaggia ti attende</h2>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cupiditate vel dolores distinctio officia accusamus
+						adipisci, nimi beatae repudiandae consequuntur expedita assumenda eos
+						ipsum?</p>
+					<button class="button-og">Acquista ora</button>
+				</div>
+			</div>
+			
 		</div>
-		<div class="nuove-uscite">
-			<h4>Nuove uscite</h4>
-			<p>Lorem ipsum dolor sit amet consectetur.</p>
-			<!-- 2row da 6 colonne w-2 -->
-			<img src="./img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="tony-hawks-pro-skater-1-2-store-art">
-			<p>tony hawks pro skater 1-2</p>
+		<div class="nuove-uscite pt-4">
+			<div class="container-fluid">
+				<h4 class="fs-1">Nuove uscite</h4>
+				<p>Lorem ipsum dolor sit amet consectetur. Lorem, ipsum dolor.</p>
+			</div>
+			
+			
+			<div class="carosel container-fluid">
+				<div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-5 my-4 pb-5">
+					
+					<div class="col">
+						<img src="./img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="tony-hawks-pro-skater-1-2-store-art">
+						<p class="mt-2">tony hawks pro skater 1-2</p>
+					</div>
 
-			<img src="./img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="crash-bandicoot-4-its-about-time-store-art">
-			<p>crash bandicoot 4 its about time</p>
+					<div class="col">
+						<img src="./img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="crash-bandicoot-4-its-about-time-store-art">
+						<p class="mt-2">crash bandicoot 4 its about time</p>
+					</div>
+
+					<div class="col">
+						<img src="./img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="tony-hawks-pro-skater-1-2-store-art">
+						<p class="mt-2">tony hawks pro skater 1-2</p>
+					</div>
+
+					<div class="col">
+						<img src="./img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="crash-bandicoot-4-its-about-time-store-art">
+						<p class="mt-2">crash bandicoot 4 its about time</p>
+					</div>
+
+					<div class="col">
+						<img src="./img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="tony-hawks-pro-skater-1-2-store-art">
+						<p class="mt-2">tony hawks pro skater 1-2</p>
+					</div>
+
+					<div class="col">
+						<img src="./img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="crash-bandicoot-4-its-about-time-store-art">
+						<p class="mt-2">crash bandicoot 4 its about time</p>
+					</div>
+
+					<div class="col">
+						<img src="./img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="tony-hawks-pro-skater-1-2-store-art">
+						<p class="mt-2">tony hawks pro skater 1-2</p>
+					</div>
+
+					<div class="col">
+						<img src="./img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="crash-bandicoot-4-its-about-time-store-art">
+						<p class="mt-2">crash bandicoot 4 its about time</p>
+					</div>
+
+					<div class="col">
+						<img src="./img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="tony-hawks-pro-skater-1-2-store-art">
+						<p class="mt-2">tony hawks pro skater 1-2</p>
+					</div>
+
+					<div class="col">
+						<img src="./img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="crash-bandicoot-4-its-about-time-store-art">
+						<p class="mt-2">crash bandicoot 4 its about time</p>
+					</div>
+
+					<div class="col">
+						<img src="./img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="tony-hawks-pro-skater-1-2-store-art">
+						<p class="mt-2">tony hawks pro skater 1-2</p>
+					</div>
+
+					<div class="col">
+						<img src="./img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="crash-bandicoot-4-its-about-time-store-art">
+						<p class="mt-2">crash bandicoot 4 its about time</p>
+					</div>
+
+				</div>
+			</div>
+			
 		</div>
 	</div>
 
+	<!-- PS4 -->
 	<div class="ps4">
 		<!-- 2 row -->
-		<div class="ps4-head">
-			<h2>Esplora ps4</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus laborum vero officia, pariatur asperiores illo.</p>
+		<div class="ps4-head text-center">
+			<h2 class="fs-1 my-4">Esplora Playstation 4</h2>
+			<p class="text-muted">Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. ipsum dolor<br> consectetur. Voluptatibus laborum vero officia, pariatur asperiores illo.</p>
 		</div>
-		<div class="ps4-store">
+		<div class="ps4-store container-fluid">
 			<!-- 3 col -->
+			<div class="row row-cols-1 row-cols-md-3 my-5">
+				<div class="col">
+					
+					<img src="./img/ps4-slim-homepage-image-block.jpg" alt="ps4">
+					<h4 class="fs-2">Playstation 4</h4>
+					<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, vitae.</p>
+					<button class="button-bl">Scopri di più</button>
+				
+				</div>
+				<div class="col">
+					<img src="./img/double11-202010-tw-psvr.jpg" alt="vr">
+					<h4 class="fs-2">Playstation 4</h4>
+					<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, vitae.</p>
+					<button class="button-bl">Scopri di più</button>
+				</div>
+				<div class="col">
+					<img src="./img/dualshock-4-listing-thumb.jpg" alt="controller">
+					<h4 class="fs-2">Playstation 4</h4>
+					<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, vitae.</p>
+					<button class="button-bl">Scopri di più</button>
+				</div>
+			</div>
+			
+
 			<div>
-				<img src="./img/ps4-slim-homepage-image-block.jpg" alt="ps4">
-				<h4>Playstation 4</h4>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, vitae.</p>
-				<button>Scopri di più</button>
+				
 			</div>
 
 			<div>
-				<img src="./img/double11-202010-tw-psvr.jpg" alt="vr">
-				<h4>Playstation 4</h4>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, vitae.</p>
-				<button>Scopri di più</button>
-			</div>
-
-			<div>
-				<img src="./img/dualshock-4-listing-thumb.jpg" alt="controller">
-				<h4>Playstation 4</h4>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, vitae.</p>
-				<button>Scopri di più</button>
+				
 			</div>
 		</div>
 	</div>
 
-	<div class="ps-plus">
-		<!-- 2 col 75-25 -->
-		<div><img src="./img/ps-plus-logo.png" alt="logo ps plus">
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid assumenda sapiente iste ipsa perspiciatis totam iusto ab debitis odio incidunt? Placeat quisquam eum vitae delectus voluptates quis dolores laborum labore.</p>
-		<button>Esplora Playstation Plus</button>
-		</div>
-
-		<div>
-			<img src="./img/ps-plus-april-monthly-games-featured-image-block.png" alt="game">
-		</div>
-	</div>
-
-	<div class="sale-ps-store">
+	<!-- PS PLUS -->
+	<div class="ps-plus container-fluid">
 		<div class="row">
-			<h2>Nuovi Sconti sul Playstation Store</h2>
-			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo delectus sapiente cum ducimus facere, velit ipsa sed. Placeat numquam et ullam est sequi illo cupiditate, ab quam saepe, vitae dignissimos!</p>
+
+			<div class="col-12 col-md-8 d-flex align-items-center">
+				<div>
+					<img class="ps-plus-img my-3" src="./img/ps-plus-logo.png" alt="logo ps plus">
+					<p class="fs-5 my-3 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid assumenda sapiente iste ipsa
+						perspiciatis totam
+						iusto ab debitis odio incidunt? Placeat quisquam eum vitae delectus voluptates quis dolores laborum labore.</p>
+					<button class="button-grey fs-5">Esplora Playstation Plus</button>
+				</div>
+			</div>
+
+			<div class="col">
+				<img class="ps-plus-img-big d-none d-md-block" src="./img/ps-plus-april-monthly-games-featured-image-block.png" alt="game">
+			</div>
+		</div>
+	</div>
+
+	<!-- SALE PS STORE -->
+	<div class="sale-ps-store">
+		<div class="text-center my-5">
+			<h2 class="fs-1 pb-3">Nuovi Sconti sul Playstation Store</h2>
+			<p class="text-muted">Lorem amet consectetur adipisicing elit. Quo delectus sapiente cum ducimus facere, velit ipsa sed. Placeat numquam et ullam est sequi illo cupiditate, ab quam saepe, vitae dignissimos!</p>
 		</div>
 		
-		<!-- row 3 col -->
-		<img src="./img/playstation-store-games-under-20-spotlight.jpg" alt="sale">
-		<img src="./img/playstation-store-golden-week-sale-spotlight.jpg" alt="sale">
-		<img src="./img/playstation-store-free-to-play-spotlight.png" alt="sale">
+		<div class="container">
+			<div class="row row-cols-1 row-cols-md-3 pb-4 g-5">
+				<div class="col">
+					<img src="./img/playstation-store-games-under-20-spotlight.jpg" alt="sale">
+				</div>
+				<div class="col">
+					<img src="./img/playstation-store-golden-week-sale-spotlight.jpg" alt="sale">
+				</div>
+				<div class="col">
+					<img src="./img/playstation-store-free-to-play-spotlight.png" alt="sale">
+				</div>
+			</div>
+		</div>
 	</div>
 
-	<div class="ps-now">
-		<!-- 2 col -->
-		<div><img src="./img/ps-now-logo-two-column.png" alt="logo">
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus et! Velit obcaecati quos voluptatem perspiciatis dicta ad magni eaque. Natus, eveniet? Amet blanditiis sit dicta quod, aliquid pariatur suscipit!</p>
-		<button>Esplora Playstation Now</button>
-		</div>
-		<div>
-			<img src="./img/ps-now-april-featured-image-block.png" alt="games">
+	<!-- PS NOW -->
+	<div class="ps-now container-fluid my-5 py-5">
+		<div class="row ">
+			<div class="col d-flex align-items-center">
+				<div>
+					<img class="ps-now-img mb-5" src="./img/ps-now-logo-two-column.png" alt="logo">
+					<p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus et! Velit obcaecati quos voluptatem
+						perspiciatis dicta ad magni eaque. Natus, eveniet? Amet blanditiis sit dicta quod, aliquid pariatur suscipit!</p>
+					<button class="button-white fs-5">Esplora Playstation Now</button>
+				</div>
+			</div>
+
+			<div class="col d-flex align-items-center   d-none d-md-block">
+				<img class="ps-now-img-big" src="./img/ps-now-april-featured-image-block.png" alt="games">
+			</div>
 		</div>
 	</div>
 
 	<footer>
-		<!-- 2 row -->
+	
 		<!-- container piu stretto social -->
-		<div class="social">
-			<h4>Seguici sui social media</h4>
+		<!-- SOCIAL -->
+		<div class="social container-sm">
+			<h4 class="text-center fs-1">Seguici sui social media</h4>
 			<!-- 4 col -->
-			<img src="./img/twitter.jpg" alt="social">
-			<img src="./img/facebook.jpg" alt="social">
-			<img src="./img/instagram.jpg" alt="social">
-			<img src="./img/youtube.png" alt="social">
+			<div class="row row-cols-2 row-cols-sm-4 g-3 my-5">
+				<div class="col">
+					<img src="./img/twitter.jpg" alt="social">
+				</div>
+				<div class="col">
+					<img src="./img/facebook.jpg" alt="social">
+				</div>
+				<div class="col">
+					<img src="./img/instagram.jpg" alt="social">
+				</div>
+				<div class="col">
+					<img src="./img/youtube.png" alt="social">
+				</div>
+			</div>
 		</div>
+
 		<div class="blu-footer">
 			<div class="ps-lenguage">
 				<img src="./img/play_logo.svg" alt="logo">
-				<img src="./img/language-globe.svg" alt="language-globe">
+				<p><i class="fa-solid fa-globe"></i> Country / Region: Italy</p>
 			</div>
 			
 			<!-- 3 col di link? -->
